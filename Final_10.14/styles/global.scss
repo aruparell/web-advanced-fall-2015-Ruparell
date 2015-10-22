@@ -1,0 +1,225 @@
+body {
+	background-color: white;
+	overflow:hidden;
+	width: 100vw;
+}
+
+#leftSide {
+	background-color: purple;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: absolute;
+
+}
+
+#rightSide {
+	border: 1px blue solid;
+	width: 50vw;
+	height: 100vh;
+	background-color: white;
+	z-index: -1;
+
+}
+
+#circleButton {
+	content: url(../images/circleButton.png);
+	border: 1px black solid;
+	width: 50vw;
+	/*width: 15vw;*/
+	/*height: 25vh;*/
+	position: absolute;
+	margin-left: 27vw;
+	/*margin-left: 43vw;*/
+	margin-top: 30vh;
+	z-index: 5;
+	opacity: 0.2;
+}
+
+/*#miniCircleHolder {
+	border: 1px solid black;
+	width: 15vw;
+	height: 20vh;
+	position: relative;
+	display: inline-block;
+	margin-left: 43.5vw;
+	margin-top: 52vh;
+}*/
+
+.smallCircle {
+	width: 25%;
+	display: block;
+	margin:auto;
+
+}
+
+#smallBlueCircle {
+	content: url(../images/blueCircle.png);
+	z-index:1;
+	/*width: 10%;*/
+	border: 1px solid black;
+	position: relative;
+	margin-left:50vw;
+	margin-top:36vh;
+	/*margin-left: 50vw;
+	margin-top: 45vh;*/
+	
+	
+
+}
+
+#smallGreenCircle {
+	content: url(../images/greenCircle.png);
+	/*width:10%;*/
+	z-index:1;
+	border: 1px solid black;
+	position: relative;
+	margin-left:50vw;
+	margin-top:0vh;
+	/*margin-left: 50vw;
+	margin-top: 0vh;*/
+
+}
+
+#smallRedCircle {
+	content: url(../images/redCircle.png);
+	z-index:1;
+/*	width: 10%;*/
+	border: 1px solid black;
+	position: relative;
+	margin-left:38vw;
+	margin-top:-16.5vh;
+	/*margin-left: 45vw;
+	margin-top: -20.5vh;*/
+
+
+}
+
+#smallYellowCircle {
+	content: url(../images/yellowCircle.png);
+	z-index:1;
+	/*width:10%;*/
+	border: 1px solid black;
+	position: relative;
+	margin-left: 38vw;
+	margin-top:0vh;
+	/*margin-left: 45vw;
+	margin-top: 0vh;*/
+
+}
+
+/* Responsive for small cirlcles staying behind big circle*/
+
+@media only screen and (max-width: 1024px){
+	body {
+		background-color: purple;
+	}
+
+}
+
+@media only screen and (max-width: 800px){
+
+	body {
+		background-color: blue;
+	}
+	
+}
+
+@media only screen and (max-width: 600px){
+
+	body {
+		background-color: green;
+	}
+	
+
+}
+
+
+/*@media all and (min-width: 800px) {
+
+	
+	
+	#circleButton {
+		width: 20%;
+		margin-top: 30vh;
+
+	}
+
+	#smallBlueCircle {
+		margin-left: 50vw;
+		margin-top: 55vh;
+
+	}
+
+	#smallGreenCircle {
+		margin-left: 50vw;
+		margin-top: 0vh;
+
+	}
+
+	#smallRedCircle {
+		margin-left: 45vw;
+		margin-top: -24vh;
+
+
+	}
+
+	#smallYellowCircle {
+		margin-left: 45vw;
+		margin-top: 0vh;
+
+	}
+}*/
+
+/*@media (min-width:800px) and (max-width: 1000px) {
+
+		#smallBlueCircle {
+		margin-left: 50vw;
+		margin-top: 43vh;
+
+	}
+
+	#smallGreenCircle {
+		margin-left: 50vw;
+		margin-top: 0vh;
+
+	}
+
+	#smallRedCircle {
+		margin-left: 45vw;
+		margin-top: -12.5vh;
+
+
+	}
+
+	#smallYellowCircle {
+		margin-left: 45vw;
+		margin-top: 0vh;
+
+	}
+}
+
+
+@media all and (orientation: landscape) {
+	section .items {
+		width: calc(80vw/2);
+		height: calc(80vw/2);
+	}
+	
+}
+@media all and (min-width: 1000px) {
+
+	section .items {
+	width: calc(80vw/3);
+	height: calc(80vw/3);
+	}
+}
+@media all and (min-width: 1200px) {
+
+	section .items {
+	width: calc(80vw/4);
+	height: calc(80vw/4);
+	}
+}
+
+*/
