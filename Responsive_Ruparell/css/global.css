@@ -1,0 +1,148 @@
+body {
+  background-color: #eee;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #4a4a4a;
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+}
+header #logo {
+  height: 50px;
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  top: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  line-height: 3.5vh;
+  padding: 0 2vh;
+}
+
+section {
+  position: relative;
+  top: 15vh;
+}
+
+#grid {
+  width: 80vw;
+  height: 10 0vh;
+  margin: 0 auto;
+}
+
+section #work {
+  position: absolute;
+  width: 80vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+section p {
+  width: 70vw;
+  float: left;
+}
+section .photos {
+  position: relative;
+  width: 70vw;
+  height: 70vw;
+  float: left;
+}
+
+#item1 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item2 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item3 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item4 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item5 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item6 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item7 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item8 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item9 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item10 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item11 {
+  content: url(../images/FearNot.jpg);
+}
+
+#item12 {
+  content: url(../images/FearNot.jpg);
+}
+
+#clearboth {
+  clear: both;
+}
+
+/*MEDIA QUERIES BEGIN*/
+@media all and (min-width: 700px) and (min-device-width: 400px) {
+  section p {
+    width: calc(80vw / 3);
+  }
+
+  section .photos {
+    width: calc(75vw/2);
+    height: calc(75vw/2);
+    margin-bottom: 2px;
+  }
+
+  /*#grid{
+  	width: calc(100vw/2);
+  }*/
+}
+@media all and (orientation: landscape) {
+  section .photos {
+    width: calc(75vw/2);
+    height: calc(75vw/2);
+    margin: 2px;
+  }
+}
+@media all and (min-width: 1000px) {
+  section .photos {
+    width: calc(75vw/3);
+    height: calc(75vw/3);
+    margin: 2px;
+  }
+}
+@media all and (min-width: 1200px) {
+  section .photos {
+    width: calc(75vw/4);
+    height: calc(75vw/4);
+    margin: 2px;
+  }
+}
