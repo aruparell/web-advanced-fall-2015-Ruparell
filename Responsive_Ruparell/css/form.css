@@ -4,7 +4,7 @@ body {
   font-family: Arial,sans-serif;
 }
 body #container {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 header {
@@ -31,4 +31,56 @@ a {
   text-decoration: none;
   line-height: 3.5vh;
   padding: 0 2vh;
+}
+
+form header {
+  margin: 0 auto;
+  text-align: center;
+}
+form header div {
+  font-size: 70%;
+  color: #000;
+}
+form header h2 {
+  margin: 0 auto;
+}
+form header div {
+  clear: both;
+  overflow: hidden;
+  padding: px;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 767px) {
+  form > div {
+    margin: 0 0 15px 0;
+  }
+
+  form > div > label,
+  legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+  legend {
+    text-align: right;
+  }
 }
