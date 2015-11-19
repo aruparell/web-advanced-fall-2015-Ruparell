@@ -43,7 +43,7 @@ section #grid {
   height: calc(100vh-50px);
   position: absolute;
   margin: 0 auto;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   overflow: hidden;
 }
 section #grid #one {
@@ -154,7 +154,7 @@ section #grid #four {
 }
 
 /*end of image container*/
-@media all and (min-width: 400px) {
+@media only screen and (min-width: 400px) {
   #grid.active {
     overflow: visible;
   }
@@ -162,7 +162,7 @@ section #grid #four {
   section .block {
     width: 100vw;
     height: auto;
-    min-height: 20vh;
+    min-height: 100vh;
     max-height: 50vw;
     transition: max-height 1s;
   }
@@ -182,7 +182,7 @@ section #grid #four {
 /* margin: 2px;*/
  /* }
 }*/
-@media all and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   #grid.active {
     overflow: visible;
   }
