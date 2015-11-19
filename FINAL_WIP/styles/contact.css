@@ -1,0 +1,85 @@
+body {
+  background-color: #eee;
+  margin: 0 auto;
+}
+body #container {
+  margin-top: 50px;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #4a4a4a;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+}
+header #logo {
+  height: 40px;
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  top: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.5vh;
+  padding: 0 2vh;
+}
+
+form header {
+  margin: 0 auto;
+  text-align: center;
+}
+form header div {
+  font-size: 70%;
+  color: #000;
+}
+form header h2 {
+  margin: 0 auto;
+}
+form header div {
+  clear: both;
+  overflow: hidden;
+  padding: px;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 767px) {
+  form > div {
+    margin: 0 0 15px 0;
+  }
+
+  form > div > label,
+  legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+  legend {
+    text-align: right;
+  }
+}
