@@ -43,15 +43,23 @@ section #grid {
   height: calc(100vh-50px);
   position: absolute;
   margin: 0 auto;
-  margin-top: 50px;
   overflow: hidden;
 }
 section #grid #one {
-  content: url(images/Aarti_Shanti.jpg);
-  position: relative;
+  background-color: white;
+  opacity: 0.95;
+  /*background-image: url(images/grid_one_bgimage.jpg);
+  background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*position: relative;*/
   /*#item1 {
     visibility: hidden;
     }*/
+}
+section #grid #one #onePic {
+  z-index: -100;
+  position: relative;
+  opacity: 0.5;
 }
 section #grid #two {
   background-color: blue;
@@ -87,16 +95,6 @@ section #grid #four {
   width: 100%;
   height: auto;
   max-height: 0;
-  /*end of image container*/
-  /*end of ecommerceContainer*/
-   /* @media all and (min-width: 767px) {
-
-      section .block {
-        width: calc(100vw/2);*/
-  /*height: calc(90vw/2);*/
-  /* margin: 2px;*/
- /* }
-}*/
 }
 #imageContainer .photos {
   position: relative;
@@ -104,7 +102,7 @@ section #grid #four {
   width: 15vw;
   height: 15vw;
   left: 5%;
-  /*top: 50px;*/
+  top: 50px;
   float: left;
   margin: 0 auto;
   max-height: 0;
@@ -112,125 +110,127 @@ section #grid #four {
 #imageContainer #MU1 {
   content: url(../images/FearNot.jpg);
 }
-#imageContainer #MU1:hover {
+#imageContainer:hover {
   max-width: 100%;
   background-color: rgba(159, 157, 157, 0.5);
 }
-#imageContainer #MU1 #MU2 {
+#imageContainer #MU2 {
+  content: url(../images/sandheart.jpg);
+}
+#imageContainer #MU3 {
+  content: url(../images/plane.jpg);
+}
+#imageContainer #MU4 {
+  content: url(../images/NYC.jpg);
+}
+#imageContainer #MU5 {
+  content: url(../images/fountain.jpg);
+}
+#imageContainer #MU6 {
+  content: url(../images/Paris.jpg);
+}
+#imageContainer #MU7 {
+  content: url(../images/aus1.jpg);
+}
+#imageContainer #MU8 {
+  content: url(../images/aus2.jpg);
+}
+#imageContainer #MU9 {
+  content: url(../images/africa.jpg);
+}
+#imageContainer #MU10 {
+  content: url(../images/silhouette.jpg);
+}
+#imageContainer #MU11 {
+  content: url(../images/sangria.jpg);
+}
+#imageContainer #MU12 {
+  content: url(../images/bike.jpg);
+}
+#imageContainer #MU13 {
+  content: url(../images/nyc2.jpg);
+}
+#imageContainer #MU14 {
+  content: url(../images/paris2.jpg);
+}
+#imageContainer #MU15 {
+  content: url(../images/rome.jpg);
+}
+#imageContainer #MU16 {
+  content: url(../images/nyc3.jpg);
+}
+#imageContainer #MU17 {
   content: url(../images/FearNot.jpg);
 }
-#imageContainer #MU1 #MU3 {
+#imageContainer #MU18 {
   content: url(../images/FearNot.jpg);
 }
-#imageContainer #MU1 #MU4 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU5 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU6 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU7 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU8 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU9 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU10 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU11 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU12 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU13 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU14 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU15 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU16 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU17 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #MU1 #MU18 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #ecommerceContainer {
-  border: 1px solid white;
+
+/*end of image container*/
+#ecommerceContainer {
+  /*border: 1px solid white;*/
   z-index: 9999;
   position: relative;
   width: 100%;
   height: auto;
   max-height: 0;
+  display: block;
+  /*#ecom1 {content: url(../images/Loreal_Kerastase_CaseStudy.jpg)}
+  #ecom2 {content: url(../images/Loreal_Shu_Responsive_Design.jpg)}
+  #ecom3 {content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
+  #ecom4 {content: url(../images/FearNot.jpg)}
+  #ecom5 {content: url(../images/FearNot.jpg)}
+  #ecom6 {content: url(../images/FearNot.jpg)}
+*/
 }
-#imageContainer #ecommerceContainer .ecomphotos {
+#ecommerceContainer .ecomphotos {
   position: relative;
   z-index: 9999;
-  padding: 2px;
-  width: 15vw;
-  height: 15vw;
+  padding: 10px;
+  width: 35vw;
+  height: 30vw;
   left: 5%;
+  top: 50px;
   float: left;
   margin: 0 auto;
   max-height: 0;
 }
-#imageContainer #ecommerceContainer #ecom1 {
-  content: url(../images/Loreal_Kerastase_CaseStudy.jpg);
-}
-#imageContainer #ecommerceContainer #ecom2 {
-  content: url(../images/Loreal_Shu_Responsive_Design.jpg);
-}
-#imageContainer #ecommerceContainer #ecom3 {
-  content: url(../images/MUA_Fashion_Amy_transformation.jpg);
-}
-#imageContainer #ecommerceContainer #ecom4 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #ecommerceContainer #ecom5 {
-  content: url(../images/FearNot.jpg);
-}
-#imageContainer #ecommerceContainer #ecom6 {
-  content: url(../images/FearNot.jpg);
-}
+
+/*end of ecommerceContainer*/
 @media all and (min-width: 400px) {
-  #imageContainer #grid.active {
+  #grid.active {
     overflow: visible;
   }
-  #imageContainer section .block {
+
+  section .block {
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
     max-height: 100vh;
     transition: max-height 1s;
   }
-  #imageContainer section .block.active {
+  section .block.active {
     max-height: 100vh;
     /*overflow: visible;*/
   }
-  #imageContainer section .block.inactive {
+  section .block.inactive {
     max-height: 0;
   }
 }
+   /* @media all and (min-width: 767px) {
+
+      section .block {
+        width: calc(100vw/2);*/
+/*height: calc(90vw/2);*/
+/* margin: 2px;*/
+ /* }
+}*/
 @media all and (min-width: 1200px) {
-  #imageContainer {
-    /*end of inactive*/
-  }
-  #imageContainer #grid.active {
+  #grid.active {
     overflow: visible;
   }
-  #imageContainer section .block {
+
+  section .block {
     width: 100vw;
     height: auto;
     min-height: calc(100vh-50px);
@@ -241,27 +241,30 @@ section #grid #four {
     transition: max-width 1s;
     /*end of active*/
   }
-  #imageContainer section .block#four {
+  section .block#four {
     background-color: purple;
     float: right;
     position: absolute;
     right: 0;
   }
-  #imageContainer section .block #item1 {
+  section .block #item1 {
     transition: max-height 1s;
     transition-delay: 2s;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    background-color: white;
+    opacity: 0.9;
+    padding: 8px;
     position: absolute;
     bottom: 20%;
     margin: 0 auto;
     left: 0;
     right: 0;
-    width: 50%;
+    width: 30%;
     height: 50%;
     max-height: 0;
     overflow: hidden;
   }
-  #imageContainer section .block #imageContainer {
+  section .block #imageContainer {
     transition: max-height 2s;
     /*  transition-delay: 2s;*/
     /*border: 1px solid white;*/
@@ -271,7 +274,7 @@ section #grid #four {
     height: 100%;
     overflow: hidden;
   }
-  #imageContainer section .block #imageContainer .photos {
+  section .block #imageContainer .photos {
     transition: max-height 3s;
     transition-delay: 2s;
     position: relative;
@@ -283,7 +286,7 @@ section #grid #four {
     float: left;
     margin: 0 auto;
   }
-  #imageContainer section .block #ecommerceContainer {
+  section .block #ecommerceContainer {
     transition: max-height 2s;
     /*  transition-delay: 2s;*/
     /*border: 1px solid white;*/
@@ -293,37 +296,38 @@ section #grid #four {
     height: 100%;
     overflow: hidden;
   }
-  #imageContainer section .block #ecommerceContainer .ecomphotos {
+  section .block #ecommerceContainer .ecomphotos {
     transition: max-height 3s;
     transition-delay: 2s;
     position: relative;
     bottom: 20%;
-    padding: 2px;
-    width: 15vw;
-    height: 15vw;
+    padding: 8px;
+    width: 35vw;
+    height: 30vw;
     left: 5%;
     float: left;
     margin: 0 auto;
+    display: block;
   }
-  #imageContainer section .block:hover {
+  section .block:hover {
     max-width: calc(100vw/3.5);
     z-index: 100;
   }
-  #imageContainer section .block.inactive {
+  section .block.inactive {
     max-width: 0%;
     max-height: 100vh;
   }
-  #imageContainer section .block.active {
+  section .block.active {
     max-width: 100%;
-    max-height: 500vh;
+    max-height: 1200vh;
     /*end of item1*/
     /*end of imageContainer*/
     /*end of imageContainer*/
   }
-  #imageContainer section .block.active #item1 {
+  section .block.active #item1 {
     max-height: 50%;
   }
-  #imageContainer section .block.active #imageContainer {
+  section .block.active #imageContainer {
     /*max-height: 100%;*/
     max-height: 500vh;
     position: relative;
@@ -331,13 +335,13 @@ section #grid #four {
     overflow: visible;
     /*end of photos*/
   }
-  #imageContainer section .block.active #imageContainer .photos {
+  section .block.active #imageContainer .photos {
     /*max-height: 100%;*/
     max-height: 500vh;
     position: relative;
     bottom: 0;
   }
-  #imageContainer section .block.active #ecommerceContainer {
+  section .block.active #ecommerceContainer {
     /*max-height: 100%;*/
     max-height: 500vh;
     position: relative;
@@ -345,10 +349,12 @@ section #grid #four {
     overflow: visible;
     /*end of photos*/
   }
-  #imageContainer section .block.active #ecommerceContainer .ecomphotos {
+  section .block.active #ecommerceContainer .ecomphotos {
     /*max-height: 100%;*/
     max-height: 500vh;
     position: relative;
     bottom: 0;
   }
+
+  /*end of inactive*/
 }

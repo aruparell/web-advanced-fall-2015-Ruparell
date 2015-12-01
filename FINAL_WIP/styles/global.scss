@@ -44,19 +44,29 @@ section {
     height: calc(100vh-50px);
     position: absolute;
     margin: 0 auto;
-    margin-top:50px;
     overflow: hidden;
 
     #one{
+      
+      background-color: white;
+      opacity: 0.95;
 
-      content: url(images/Aarti_Shanti.jpg);
-      position: relative;
+      /*background-image: url(images/grid_one_bgimage.jpg);
+      background-repeat: no-repeat;*/
+      /*background-size: cover;*/
+      /*position: relative;*/
 
         /*#item1 {
           visibility: hidden;
           }*/
           &.active {
           }
+      
+      #onePic {
+        z-index: -100;
+        position: relative;
+        opacity: 0.5;
+        }
 
         }
 
@@ -112,7 +122,7 @@ section {
         width: 15vw;
         height:15vw;
         left: 5%;
-        /*top: 50px;*/
+        top: 50px;
         float: left;
         margin: 0 auto;
         max-height: 0;
@@ -120,27 +130,27 @@ section {
 
         }
 
-      #MU1 {content: url(../images/FearNot.jpg);
+      #MU1 {content: url(../images/FearNot.jpg);}
             &:hover {
                 max-width: 100%;
                 background-color: rgba(159,157,157,0.5);
 
             }
-      #MU2 {content: url(../images/FearNot.jpg)}
-      #MU3 {content: url(../images/FearNot.jpg)}
-      #MU4 {content: url(../images/FearNot.jpg)}
-      #MU5 {content: url(../images/FearNot.jpg)}
-      #MU6 {content: url(../images/FearNot.jpg)}
-      #MU7 {content: url(../images/FearNot.jpg)}
-      #MU8 {content: url(../images/FearNot.jpg)}
-      #MU9 {content: url(../images/FearNot.jpg)}
-      #MU10 {content: url(../images/FearNot.jpg)}
-      #MU11 {content: url(../images/FearNot.jpg)}
-      #MU12 {content: url(../images/FearNot.jpg)}
-      #MU13 {content: url(../images/FearNot.jpg)}
-      #MU14 {content: url(../images/FearNot.jpg)}
-      #MU15 {content: url(../images/FearNot.jpg)}
-      #MU16 {content: url(../images/FearNot.jpg)}
+      #MU2 {content: url(../images/sandheart.jpg)}
+      #MU3 {content: url(../images/plane.jpg)}
+      #MU4 {content: url(../images/NYC.jpg)}
+      #MU5 {content: url(../images/fountain.jpg)}
+      #MU6 {content: url(../images/Paris.jpg)}
+      #MU7 {content: url(../images/aus1.jpg)}
+      #MU8 {content: url(../images/aus2.jpg)}
+      #MU9 {content: url(../images/africa.jpg)}
+      #MU10 {content: url(../images/silhouette.jpg)}
+      #MU11 {content: url(../images/sangria.jpg)}
+      #MU12 {content: url(../images/bike.jpg)}
+      #MU13 {content: url(../images/nyc2.jpg)}
+      #MU14 {content: url(../images/paris2.jpg)}
+      #MU15 {content: url(../images/rome.jpg)}
+      #MU16 {content: url(../images/nyc3.jpg)}
       #MU17 {content: url(../images/FearNot.jpg)}
       #MU18 {content: url(../images/FearNot.jpg)}
   
@@ -148,21 +158,23 @@ section {
   } /*end of image container*/
   
   #ecommerceContainer{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     z-index: 9999;
     position: relative;
     width: 100%;
     height: auto;
     max-height: 0;
+    display:block;
 
 
       .ecomphotos {
         position: relative; 
         z-index: 9999;
-        padding: 2px;
-        width: 15vw;
-        height:15vw;
+        padding: 10px;
+        width: 35vw;
+        height: 30vw;
         left: 5%;
+        top: 50px;
         float: left;
         margin: 0 auto;
         max-height: 0;
@@ -170,13 +182,13 @@ section {
 
       }
 
-      #ecom1 {content: url(../images/Loreal_Kerastase_CaseStudy.jpg)}
+      /*#ecom1 {content: url(../images/Loreal_Kerastase_CaseStudy.jpg)}
       #ecom2 {content: url(../images/Loreal_Shu_Responsive_Design.jpg)}
       #ecom3 {content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
       #ecom4 {content: url(../images/FearNot.jpg)}
       #ecom5 {content: url(../images/FearNot.jpg)}
       #ecom6 {content: url(../images/FearNot.jpg)}
-    
+    */
 
   } /*end of ecommerceContainer*/
   
@@ -237,17 +249,22 @@ section {
           position: absolute;
           right:0;
         }
+
+
         #item1{
          
           transition: max-height 1s;
           transition-delay: 2s;
-          border: 1px solid black;
+          /*border: 1px solid black;*/
+          background-color: white;
+          opacity: 0.9;
+          padding: 8px;
           position: absolute;
           bottom: 20%;
           margin: 0 auto;
           left: 0;
           right: 0;
-          width: 50%;
+          width: 30%;
           height: 50%;
           max-height:0;
           overflow: hidden;
@@ -296,12 +313,13 @@ section {
             transition-delay: 2s;
             position: relative;
             bottom: 20%;
-            padding: 2px;
-            width: 15vw;
-            height:15vw;
+            padding: 8px;
+            width: 35vw;
+            height: 30vw;
             left: 5%;
             float: left;
             margin: 0 auto;
+            display: block;
             
           }
         }
@@ -318,7 +336,7 @@ section {
         }
         &.active {
           max-width: 100%;
-          max-height: 500vh;
+          max-height: 1200vh;
 
           #item1{
             max-height: 50%;
@@ -364,4 +382,4 @@ section {
       
 
     } 
-  }
+  

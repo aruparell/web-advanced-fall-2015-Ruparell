@@ -1,11 +1,13 @@
 body{
   background-color: #eee;
   margin:0 auto;
+
   
   
 
   #container{
     margin-top: 50px;
+    position: absolute;
   }
 
 }
@@ -39,20 +41,24 @@ a {
 
 
 form {
+  position: relative;
+  width: 50vw;
+
 
   header {
     margin: 0 auto;
     text-align: center;
+    
 
     div {
       font-size: 70%;
-      color: #000;
+      color: #eee;
     }
 
     h2 {
       margin: 0 auto;
     }
-
+    
   div {
     clear: both;
     overflow: hidden;
@@ -67,7 +73,7 @@ form {
 
 
 
-
+/*
 
 @media only screen (max-width: 767px) {
   form > div {
@@ -98,4 +104,4 @@ form {
 	legend {
   	text-align: right;
   }
-}
+}*/
