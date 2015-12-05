@@ -127,6 +127,8 @@ section {
         top: 50px;
         float: left;
         margin: 0 auto;
+        transition: max-height 2s;
+        transition-delay: 1s;
         max-height: 0;
       
 
@@ -169,12 +171,12 @@ section {
     display:block;
   
 
-      #jobImage {
+      .jobImage {
         position: relative;
         float: left;
         }
       
-      #jobAbout {
+      .jobAbout {
         position: relative;
       
         }
@@ -219,15 +221,97 @@ section {
       section .block {
         width: 100vw;
         height: 100vh;
-        min-height: 100vh;
-        max-height: 100vh;
+        min-height: 25vh;
+        max-height: 25vh;
         transition: max-height 1s;
+
+        #imageContainer{
+
+            .photos {
+              max-height: 0vh;
+              width: 50vh;
+              height: 50vh;
+              background-size: cover;
+              transition-delay: 0s;
+              float: none;
+
+            }
+
+          
+          }
+          #ecommerceContainer {
+            .ecomphotos img {
+              max-height:0;
+              min-height:0;
+
+            }
+            .job {
+              min-height:0;
+              max-height:0;
+            }
+
+            .jobAbout {
+              opacity: 0;
+/*            max-height:0;
+              min-height:0; 
+*/            }
+          }
+          #item1 {
+            opacity:0;
+            min-height:0;
+            max-height:0;
+          }
+          #onePic {
+            opacity:0;
+            min-height:0;
+            max-height:0;
+          }
+
         &.active {
-          max-height: 100vh;
+          max-height: 10000vh;
+          overflow: auto;
+
           /*overflow: visible;*/
+
+          #imageContainer{
+            max-height: 100vh;
+
+            .photos {
+              max-height: 100vh;
+              width: 50vh;
+              height: 50vh;
+              background-size: cover;
+
+            }
+    
+
+
+          }
+          
+         #ecommerceContainer {
+            .job {
+                  min-height:0;
+                  max-height:none;
+                }
+              .ecomphotos {
+                img {
+                  max-height: 25vh;
+                  min-height: 25vh;
+                }
+                
+                .jobAbout {
+                  /*max-height: 25vh;
+                  min-height: 25vh; */
+                  opacity: 1;
+                }
+              }
+              
+            }
         }
         &.inactive {
           max-height: 0;
+          min-height:0;
+
         }
       }
 
