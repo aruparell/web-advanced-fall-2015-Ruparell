@@ -41,10 +41,12 @@ section {
   #grid {
 
     width: 100vw;
-    height: calc(100vh-50px);
+    margin-top: 50px;
+    height: 100vh;
     position: absolute;
     margin: 0 auto;
     overflow: hidden;
+    visibility: visible;
 
     #one{
       
@@ -135,23 +137,23 @@ section {
                opacity: 0.5;
               }
             }
-      #MU2 {content: url(../images/sandheart.jpg)}
-      #MU3 {content: url(../images/plane.jpg)}
+      #MU2 {content: url(../images/NYC.jpg)}
+      #MU3 {content: url(../images/NYC.jpg)}
       #MU4 {content: url(../images/NYC.jpg)}
-      #MU5 {content: url(../images/fountain.jpg)}
-      #MU6 {content: url(../images/Paris.jpg)}
-      #MU7 {content: url(../images/aus1.jpg)}
-      #MU8 {content: url(../images/aus2.jpg)}
-      #MU9 {content: url(../images/africa.jpg)}
-      #MU10 {content: url(../images/silhouette.jpg)}
-      #MU11 {content: url(../images/sangria.jpg)}
-      #MU12 {content: url(../images/bike.jpg)}
-      #MU13 {content: url(../images/nyc2.jpg)}
-      #MU14 {content: url(../images/paris2.jpg)}
-      #MU15 {content: url(../images/rome.jpg)}
-      #MU16 {content: url(../images/nyc3.jpg)}
-      #MU17 {content: url(../images/FearNot.jpg)}
-      #MU18 {content: url(../images/FearNot.jpg)}
+      #MU5 {content: url(../images/NYC.jpg)}
+      #MU6 {content: url(../images/NYC.jpg)}
+      #MU7 {content: url(../images/NYC.jpg)}
+      #MU8 {content: url(../images/NYC.jpg)}
+      #MU9 {content: url(../images/NYC.jpg)}
+      #MU10 {content: url(../images/NYC.jpg)}
+      #MU11 {content: url(../images/NYC.jpg)}
+      #MU12 {content: url(../images/NYC.jpg)}
+      #MU13 {content: url(../images/NYC.jpg)}
+      #MU14 {content: url(../images/NYC.jpg)}
+      #MU15 {content: url(../images/NYC.jpg)}
+      #MU16 {content: url(../images/NYC.jpg)}
+      #MU17 {content: url(../images/NYC.jpg)}
+      #MU18 {content: url(../images/NYC.jpg)}
   
 
   } /*end of image container*/
@@ -208,7 +210,7 @@ section {
 
 
 
-    @media all and (min-width: 400px) {
+    @media all and (max-width:1199px) and (min-width: 400px) {
 
       #grid.active {
         overflow: visible;
@@ -249,7 +251,7 @@ section {
       section .block {
         width: 100vw;
         height: auto;
-        min-height: calc(100vh-50px);
+        min-height: 100%;
         /* height: calc(90vw/4);*/
         /*margin: 2px;*/
         max-width: calc(100vw/4);

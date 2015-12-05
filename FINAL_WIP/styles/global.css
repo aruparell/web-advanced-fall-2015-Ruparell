@@ -40,10 +40,12 @@ section {
 }
 section #grid {
   width: 100vw;
-  height: calc(100vh-50px);
+  margin-top: 50px;
+  height: 100vh;
   position: absolute;
   margin: 0 auto;
   overflow: hidden;
+  visibility: visible;
 }
 section #grid #one {
   background-color: white;
@@ -114,55 +116,55 @@ section #grid #four {
   opacity: 0.5;
 }
 #imageContainer #MU2 {
-  content: url(../images/sandheart.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU3 {
-  content: url(../images/plane.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU4 {
   content: url(../images/NYC.jpg);
 }
 #imageContainer #MU5 {
-  content: url(../images/fountain.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU6 {
-  content: url(../images/Paris.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU7 {
-  content: url(../images/aus1.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU8 {
-  content: url(../images/aus2.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU9 {
-  content: url(../images/africa.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU10 {
-  content: url(../images/silhouette.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU11 {
-  content: url(../images/sangria.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU12 {
-  content: url(../images/bike.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU13 {
-  content: url(../images/nyc2.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU14 {
-  content: url(../images/paris2.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU15 {
-  content: url(../images/rome.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU16 {
-  content: url(../images/nyc3.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU17 {
-  content: url(../images/FearNot.jpg);
+  content: url(../images/NYC.jpg);
 }
 #imageContainer #MU18 {
-  content: url(../images/FearNot.jpg);
+  content: url(../images/NYC.jpg);
 }
 
 /*end of image container*/
@@ -204,7 +206,7 @@ section #grid #four {
 }
 
 /*end of ecommerceContainer*/
-@media all and (min-width: 400px) {
+@media all and (max-width: 1199px) and (min-width: 400px) {
   #grid.active {
     overflow: visible;
   }
@@ -240,7 +242,7 @@ section #grid #four {
   section .block {
     width: 100vw;
     height: auto;
-    min-height: calc(100vh-50px);
+    min-height: 100%;
     /* height: calc(90vw/4);*/
     /*margin: 2px;*/
     max-width: calc(100vw/4);
