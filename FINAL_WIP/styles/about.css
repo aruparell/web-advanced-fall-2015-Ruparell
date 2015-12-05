@@ -8,13 +8,12 @@ body {
 body h2 {
   position: relative;
   font-size: 40px;
-  text-align: center;
-  color: purple;
+  color: grey;
   top: 150px;
   left: 210px;
   /*right: 50px;*/
   width: 300px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   padding: 10px;
   margin: 0 auto;
 }
@@ -38,7 +37,7 @@ body p {
   bottom: 450px;
   padding: 10px;
   margin: 10px;
-  border: 1px solid black;
+  /*  border: 1px solid black;*/
 }
 
 /*end of body*/
@@ -69,30 +68,40 @@ a {
   padding: 0 2vh;
 }
 
-@media only screen and (max-width: 770px) {
-  h2 {
+@media only screen and (max-width: 700px) {
+  body #profilePicture {
+    width: 100vw;
+    /*position: relative;*/
+  }
+  body h2 {
     position: relative;
-    font-size: 20px;
+    font-size: 30px;
     color: purple;
     width: 100vw;
     top: 65px;
-    border: 1px solid black;
     margin: 0 auto;
+    /*border: 1px solid black;*/
     z-index: 9999;
   }
-
-  #profilePicture {
-    width: 100%;
-    /*position: relative;*/
-  }
-
-  p {
+  body #text {
     width: 100vw;
+    padding: 2px;
+    border: 1px solid black;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+  body #text p {
+    width: 100vw;
+    left: 0;
+    width: 100vw;
+    top: 10px;
     position: relative;
     /*left: 500px;*/
     /*bottom: 400px;*/
     /*padding: 2px;*/
     /*margin: 10px;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
   }
 }

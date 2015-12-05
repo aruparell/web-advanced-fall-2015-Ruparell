@@ -130,11 +130,10 @@ section {
 
         }
 
-      #MU1 {content: url(../images/FearNot.jpg);}
+      #MU1 {content: url(../images/FearNot.jpg);
             &:hover {
-                max-width: 100%;
-                background-color: rgba(159,157,157,0.5);
-
+               opacity: 0.5;
+              }
             }
       #MU2 {content: url(../images/sandheart.jpg)}
       #MU3 {content: url(../images/plane.jpg)}

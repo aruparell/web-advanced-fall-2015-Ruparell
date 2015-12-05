@@ -8,12 +8,12 @@ body {
     h2 {
       position: relative;
       font-size: 40px;
-      color: purple;
+      color: grey;
       top: 150px;
       left: 210px;
       /*right: 50px;*/
       width: 300px;
-      border: 1px solid black;
+      /*border: 1px solid black;*/
       padding: 10px;
       margin: 0 auto;
     }
@@ -40,7 +40,7 @@ body {
       bottom: 450px;
       padding: 10px;
       margin: 10px;
-      border: 1px solid black;
+    /*  border: 1px solid black;*/
 
 
     }
@@ -74,49 +74,55 @@ a {
 
 }
 
- @media only screen and (max-width: 770px) {
+ @media only screen and (max-width: 700px) {
  
+body {
 
-  h2 {
-      position: relative;
-      font-size: 20px;
-      color: purple;
-      width: 100vw;
-      top: 65px;
   
-      border: 1px solid black;
-      margin: 0 auto;
-      z-index:9999;
-    }
-  
+
     #profilePicture {
-  
       width: 100vw;
-      /*position: relative;*/
-   
-      
-      
-
+      /*position: relative;*/  
     }
+    h2 {
+    position: relative;
+    font-size: 30px;
+    color: purple;
+    width: 100vw;
+    top: 65px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    z-index:9999;
+    }
+  #text{
+    width: 100vw;
+    padding: 2px;
+    border: 1px solid black;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
     p {
       
       width: 100vw;
+      left: 0;
+      width: 100vw;
+      top: 10px;
       
       position: relative;
       /*left: 500px;*/
       /*bottom: 400px;*/
       /*padding: 2px;*/
       /*margin: 10px;*/
-      border: 1px solid black;
+      /*border: 1px solid black;*/
 
 
     }
-
+  }
   
   }
-
 
   @media only screen and (max-width: 1200px) {
 
   }
-
+};

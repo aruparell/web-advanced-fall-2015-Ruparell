@@ -38,39 +38,49 @@ a {
   padding: 0 2vh;
 }
 
-
-
-form {
-  position: relative;
+#container {
+  position: absolute;
   width: 50vw;
+  height: 100vh;
+  border: 1px solid black;
+  left: 28%;
 
 
-  header {
-    margin: 0 auto;
-    text-align: center;
-    
+  form {
+    position: relative;
+    width: 50vw;
+    border: 1px solid blue;
 
-    div {
-      font-size: 70%;
-      color: #eee;
-    }
 
-    h2 {
+    #heading {
+      position: relative;
       margin: 0 auto;
-    }
+      text-align: center;
     
-  div {
-    clear: both;
-    overflow: hidden;
-    padding: px;
-    margin: 0 0 10px 0;
-    } //end of div in form
-
-  } //end of header
-
-} //end of form
+    
 
 
+      div {
+        font-size: 70%;
+        color: #eee;
+      }
+
+      h2 {
+        margin: 0 auto;
+      }
+      
+    div {
+      clear: both;
+      overflow: hidden;
+      padding: px;
+      margin: 0 0 10px 0;
+      } //end of div in form
+
+    } /*//end of header*/
+
+  } /*//end of form*/
+
+} /*//end of container*/
 
 
 /*

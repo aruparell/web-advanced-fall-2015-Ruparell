@@ -33,28 +33,40 @@ a {
   padding: 0 2vh;
 }
 
-form {
+#container {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  border: 1px solid black;
+  left: 28%;
+  /*//end of form*/
+}
+#container form {
   position: relative;
   width: 50vw;
+  border: 1px solid blue;
+  /*//end of header*/
 }
-form header {
+#container form #heading {
+  position: relative;
   margin: 0 auto;
   text-align: center;
 }
-form header div {
+#container form #heading div {
   font-size: 70%;
   color: #eee;
 }
-form header h2 {
+#container form #heading h2 {
   margin: 0 auto;
 }
-form header div {
+#container form #heading div {
   clear: both;
   overflow: hidden;
   padding: px;
   margin: 0 0 10px 0;
 }
 
+/*//end of container*/
 /*
 
 @media only screen (max-width: 767px) {
