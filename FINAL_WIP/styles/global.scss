@@ -110,7 +110,7 @@ section {
 
 
       } /*end of block CSS*/
-  #imageContainer{
+  .imageContainer{
     border: 1px solid white;
     position: absolute;
     width: 100%;
@@ -132,6 +132,17 @@ section {
         max-height: 0;
       
 
+        }
+
+        .MUphotos {
+          position: relative;
+          padding: 4px;
+          width: 30vw;
+          height: 590px;
+          left: 5%;
+          top:50px;
+          float: left;
+          margin: 0 auto;
         }
 
       #MU1 {content: url(../images/FearNot.jpg);
@@ -157,7 +168,14 @@ section {
       #MU17 {content: url(../images/NYC.jpg)}
       #MU18 {content: url(../images/NYC.jpg)}
   
-
+      #makeUp1{content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
+      #makeUp2{content: url(../images/MUA_SnehaBridal_comp.jpg)}
+      #makeUp3{content: url(../images/MUA_Fashion_Veronica.jpg)}
+      #makeUp4{content: url(../images/MUA_JoBridal_comp.jpg)}
+      #makeUp5{content: url(../images/MUA_Fashion_SamanthaGold_comp.jpg)}
+      #makeUp6{content: url(../images/NYC.jpg)}
+      #makeUp7{content: url(../images/NYC.jpg)}
+      #makeUp8{content: url(../images/NYC.jpg)}
   } /*end of image container*/
   
   #ecommerceContainer{
@@ -224,8 +242,9 @@ section {
         min-height: 25vh;
         max-height: 25vh;
         transition: max-height 1s;
+        
 
-        #imageContainer{
+        .imageContainer{
 
             .photos {
               max-height: 0vh;
@@ -234,9 +253,19 @@ section {
               background-size: cover;
               transition-delay: 0s;
               float: none;
-
+              
             }
-
+            .MUphotos {
+              max-height:0;
+              /*position: relative;
+              padding: 4px;
+              width: 30vw;
+              height: 590px;
+              left: 5%;
+              top:50px;
+              float: left;
+              margin: 0 auto;*/
+            }
           
           }
           #ecommerceContainer {
@@ -273,7 +302,7 @@ section {
 
           /*overflow: visible;*/
 
-          #imageContainer{
+          .imageContainer{
             max-height: 100vh;
 
             .photos {
@@ -283,9 +312,27 @@ section {
               background-size: cover;
 
             }
-    
-
-
+            .MUphotos {
+              max-height: 100vh;
+              position: relative;
+              padding: 4px;
+              width: 100vw;
+              height: auto;
+              top:50px;
+              float: none;
+              margin: 0 auto;
+            }
+            
+          }
+          #item1 {
+            opacity:1;
+            min-height:0;
+            max-height:20vh;
+          }
+          #onePic {
+            opacity:1;
+            min-height:0;
+            max-height:100vh;
           }
           
          #ecommerceContainer {
@@ -311,6 +358,8 @@ section {
         &.inactive {
           max-height: 0;
           min-height:0;
+
+         
 
         }
       }
@@ -369,7 +418,7 @@ section {
 
         }
 
-        #imageContainer{
+        .imageContainer{
           transition: max-height 2s;
         /*  transition-delay: 2s;*/
           /*border: 1px solid white;*/
@@ -457,7 +506,7 @@ section {
             max-height: 50%;
 
           } /*end of item1*/
-          #imageContainer{
+          .imageContainer{
             /*max-height: 100%;*/
             max-height: 500vh;
             position: relative;

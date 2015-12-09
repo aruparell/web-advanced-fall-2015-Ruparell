@@ -91,14 +91,14 @@ section #grid #four {
 }
 
 /*end of block CSS*/
-#imageContainer {
+.imageContainer {
   border: 1px solid white;
   position: absolute;
   width: 100%;
   height: auto;
   max-height: 0;
 }
-#imageContainer .photos {
+.imageContainer .photos {
   position: relative;
   padding: 2px;
   width: 15vw;
@@ -111,61 +111,95 @@ section #grid #four {
   transition-delay: 1s;
   max-height: 0;
 }
-#imageContainer #MU1 {
+.imageContainer .MUphotos {
+  position: relative;
+  padding: 4px;
+  width: 30vw;
+  height: 590px;
+  left: 5%;
+  top: 50px;
+  float: left;
+  margin: 0 auto;
+}
+.imageContainer #MU1 {
   content: url(../images/FearNot.jpg);
 }
-#imageContainer #MU1:hover {
+.imageContainer #MU1:hover {
   opacity: 0.5;
 }
-#imageContainer #MU2 {
+.imageContainer #MU2 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU3 {
+.imageContainer #MU3 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU4 {
+.imageContainer #MU4 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU5 {
+.imageContainer #MU5 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU6 {
+.imageContainer #MU6 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU7 {
+.imageContainer #MU7 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU8 {
+.imageContainer #MU8 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU9 {
+.imageContainer #MU9 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU10 {
+.imageContainer #MU10 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU11 {
+.imageContainer #MU11 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU12 {
+.imageContainer #MU12 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU13 {
+.imageContainer #MU13 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU14 {
+.imageContainer #MU14 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU15 {
+.imageContainer #MU15 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU16 {
+.imageContainer #MU16 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU17 {
+.imageContainer #MU17 {
   content: url(../images/NYC.jpg);
 }
-#imageContainer #MU18 {
+.imageContainer #MU18 {
+  content: url(../images/NYC.jpg);
+}
+.imageContainer #makeUp1 {
+  content: url(../images/MUA_Fashion_Amy_transformation.jpg);
+}
+.imageContainer #makeUp2 {
+  content: url(../images/MUA_SnehaBridal_comp.jpg);
+}
+.imageContainer #makeUp3 {
+  content: url(../images/MUA_Fashion_Veronica.jpg);
+}
+.imageContainer #makeUp4 {
+  content: url(../images/MUA_JoBridal_comp.jpg);
+}
+.imageContainer #makeUp5 {
+  content: url(../images/MUA_Fashion_SamanthaGold_comp.jpg);
+}
+.imageContainer #makeUp6 {
+  content: url(../images/NYC.jpg);
+}
+.imageContainer #makeUp7 {
+  content: url(../images/NYC.jpg);
+}
+.imageContainer #makeUp8 {
   content: url(../images/NYC.jpg);
 }
 
@@ -220,13 +254,24 @@ section #grid #four {
     max-height: 25vh;
     transition: max-height 1s;
   }
-  section .block #imageContainer .photos {
+  section .block .imageContainer .photos {
     max-height: 0vh;
     width: 50vh;
     height: 50vh;
     background-size: cover;
     transition-delay: 0s;
     float: none;
+  }
+  section .block .imageContainer .MUphotos {
+    max-height: 0;
+    /*position: relative;
+    padding: 4px;
+    width: 30vw;
+    height: 590px;
+    left: 5%;
+    top:50px;
+    float: left;
+    margin: 0 auto;*/
   }
   section .block #ecommerceContainer .ecomphotos img {
     max-height: 0;
@@ -257,14 +302,34 @@ section #grid #four {
     overflow: auto;
     /*overflow: visible;*/
   }
-  section .block.active #imageContainer {
+  section .block.active .imageContainer {
     max-height: 100vh;
   }
-  section .block.active #imageContainer .photos {
+  section .block.active .imageContainer .photos {
     max-height: 100vh;
     width: 50vh;
     height: 50vh;
     background-size: cover;
+  }
+  section .block.active .imageContainer .MUphotos {
+    max-height: 100vh;
+    position: relative;
+    padding: 4px;
+    width: 100vw;
+    height: auto;
+    top: 50px;
+    float: none;
+    margin: 0 auto;
+  }
+  section .block.active #item1 {
+    opacity: 1;
+    min-height: 0;
+    max-height: 20vh;
+  }
+  section .block.active #onePic {
+    opacity: 1;
+    min-height: 0;
+    max-height: 100vh;
   }
   section .block.active #ecommerceContainer .job {
     min-height: 0;
@@ -331,7 +396,7 @@ section #grid #four {
     max-height: 0;
     overflow: hidden;
   }
-  section .block #imageContainer {
+  section .block .imageContainer {
     transition: max-height 2s;
     /*  transition-delay: 2s;*/
     /*border: 1px solid white;*/
@@ -341,7 +406,7 @@ section #grid #four {
     height: 100%;
     overflow: hidden;
   }
-  section .block #imageContainer .photos {
+  section .block .imageContainer .photos {
     transition: max-height 3s;
     transition-delay: 2s;
     position: relative;
@@ -407,7 +472,7 @@ section #grid #four {
   section .block.active #item1 {
     max-height: 50%;
   }
-  section .block.active #imageContainer {
+  section .block.active .imageContainer {
     /*max-height: 100%;*/
     max-height: 500vh;
     position: relative;
@@ -415,7 +480,7 @@ section #grid #four {
     overflow: visible;
     /*end of photos*/
   }
-  section .block.active #imageContainer .photos {
+  section .block.active .imageContainer .photos {
     /*max-height: 100%;*/
     max-height: 500vh;
     position: relative;
