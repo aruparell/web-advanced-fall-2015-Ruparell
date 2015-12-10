@@ -138,44 +138,44 @@ section {
           position: relative;
           padding: 4px;
           width: 30vw;
-          height: 590px;
+          height: auto;
           left: 5%;
           top:50px;
           float: left;
           margin: 0 auto;
         }
 
-     /* #MU1 {content: url(../images/FearNot.jpg);
+      /*#MU1 {content: url(../images/FearNot.jpg);
             &:hover {
                opacity: 0.5;
               }
-            }*/
-     /* #MU2 {content: url(../images/NYC.jpg)}
-      #MU3 {content: url(../images/NYC.jpg)}
+            }
+      #MU2 {content: url(../images/sandheart.jpg)}
+      #MU3 {content: url(../images/plane.jpg)}
       #MU4 {content: url(../images/NYC.jpg)}
-      #MU5 {content: url(../images/NYC.jpg)}
-      #MU6 {content: url(../images/NYC.jpg)}
-      #MU7 {content: url(../images/NYC.jpg)}
-      #MU8 {content: url(../images/NYC.jpg)}
-      #MU9 {content: url(../images/NYC.jpg)}
-      #MU10 {content: url(../images/NYC.jpg)}
-      #MU11 {content: url(../images/NYC.jpg)}
-      #MU12 {content: url(../images/NYC.jpg)}
-      #MU13 {content: url(../images/NYC.jpg)}
-      #MU14 {content: url(../images/NYC.jpg)}
-      #MU15 {content: url(../images/NYC.jpg)}
-      #MU16 {content: url(../images/NYC.jpg)}
-      #MU17 {content: url(../images/NYC.jpg)}
-      #MU18 {content: url(../images/NYC.jpg)}*/
+      #MU5 {content: url(../images/fountain.jpg)}
+      #MU6 {content: url(../images/Paris.jpg)}
+      #MU7 {content: url(../images/aus1.jpg)}
+      #MU8 {content: url(../images/aus2.jpg)}
+      #MU9 {content: url(../images/africa.jpg)}
+      #MU10 {content: url(../images/silhouette.jpg)}
+      #MU11 {content: url(../images/sangria.jpg)}
+      #MU12 {content: url(../images/bike.jpg)}
+      #MU13 {content: url(../images/nyc2.jpg)}
+      #MU14 {content: url(../images/paris2.jpg)}
+      #MU15 {content: url(../images/rome.jpg)}
+      #MU16 {content: url(../images/nyc3.jpg)}
+      #MU17 {content: url(../images/FearNot.jpg)}
+      #MU18 {content: url(../images/FearNot.jpg)}*/
   
-      #makeUp1{content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
+      /*#makeUp1{content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
       #makeUp2{content: url(../images/MUA_SnehaBridal_comp.jpg)}
       #makeUp3{content: url(../images/MUA_Fashion_Veronica.jpg)}
       #makeUp4{content: url(../images/MUA_JoBridal_comp.jpg)}
       #makeUp5{content: url(../images/MUA_Fashion_SamanthaGold_comp.jpg)}
       #makeUp6{content: url(../images/NYC.jpg)}
       #makeUp7{content: url(../images/NYC.jpg)}
-      #makeUp8{content: url(../images/NYC.jpg)}
+      #makeUp8{content: url(../images/NYC.jpg)}*/
   } /*end of image container*/
   
   #ecommerceContainer{
@@ -311,6 +311,7 @@ section {
               height: 50vh;
               background-size: cover;
 
+
             }
             .MUphotos {
               max-height: 100vh;
@@ -433,6 +434,7 @@ section {
             transition: max-height 3s;
             transition-delay: 2s;
             position: relative;
+            /*background-color: black;*/
             bottom: 20%;
             padding: 2px;
             width: 15vw;
