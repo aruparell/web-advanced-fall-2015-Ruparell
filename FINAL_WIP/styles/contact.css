@@ -65,6 +65,12 @@ a {
   padding: px;
   margin: 0 0 10px 0;
 }
+#container form #title1 {
+  font-size: 20px;
+}
+#container form #Feild1 {
+  width: 40vw;
+}
 
 /*//end of container*/
 /*
