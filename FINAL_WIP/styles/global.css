@@ -97,7 +97,7 @@ section #grid #four {
   width: 100%;
   height: auto;
   max-height: 0;
-  /*#MU1 {content: url(../images/FearNot.jpg);
+  /*#MU1 {
         &:hover {
            opacity: 0.5;
           }
