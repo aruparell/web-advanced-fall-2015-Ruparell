@@ -7,7 +7,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 1000;
+  z-index: 100000;
   top: 0;
   left: 0;
   background-color: #4a4a4a;
@@ -94,12 +94,18 @@ section #grid #four {
 .imageSwap {
   position: relative;
 }
-.imageSwap #top:hover {
+.imageSwap .photos {
+  position: absolute;
+}
+.imageSwap .top {
   opacity: 0;
+}
+.imageSwap .top:hover {
+  opacity: 1;
 }
 
 .imageContainer {
-  border: 1px solid white;
+  /*border: 1px solid white;*/
   position: absolute;
   width: 100%;
   height: auto;
@@ -147,8 +153,8 @@ section #grid #four {
   transition: max-height 2s;
   transition-delay: 1s;
   max-height: 0;
-  webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 .imageContainer .MUphotos {
   position: relative;
@@ -185,6 +191,7 @@ section #grid #four {
 }
 #ecommerceContainer .jobAbout {
   position: relative;
+  margin-left: 20px;
 }
 #ecommerceContainer .ecomphotos {
   position: relative;
@@ -201,6 +208,10 @@ section #grid #four {
 
 /*end of ecommerceContainer*/
 @media all and (max-width: 1199px) and (min-width: 400px) {
+  body {
+    overflow: hidden;
+  }
+
   #grid.active {
     overflow: visible;
   }
@@ -210,6 +221,7 @@ section #grid #four {
     height: 100vh;
     min-height: 25vh;
     max-height: 25vh;
+    overflow: hidden;
     transition: max-height 1s;
   }
   section .block .imageContainer .photos {
@@ -246,14 +258,25 @@ section #grid #four {
     */
   }
   section .block #item1 {
+    background-color: white;
     opacity: 0;
-    min-height: 0;
+    padding: 8px;
+    position: absolute;
+    bottom: 20%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: auto;
     max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+    /*transition-delay: 2s;*/
   }
   section .block #onePic {
-    opacity: 0;
-    min-height: 0;
-    max-height: 0;
+    opacity: 0.95;
+    /*min-height:0;
+    max-height:0;*/
   }
   section .block.active {
     max-height: 10000vh;
@@ -269,6 +292,27 @@ section #grid #four {
     height: 50vh;
     background-size: cover;
   }
+  section .block.active .imageContainer .imageSwap {
+    position: relative;
+    bottom: 20%;
+    padding: 2px;
+    width: 50vw;
+    height: 50vh;
+    left: 5%;
+    float: left;
+    margin: 0 auto;
+  }
+  section .block.active .imageContainer .imageSwap .photos {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  section .block.active .imageContainer .imageSwap .top {
+    opacity: 0;
+  }
+  section .block.active .imageContainer .imageSwap .top:hover {
+    opacity: 1;
+  }
   section .block.active .imageContainer .MUphotos {
     max-height: 100vh;
     position: relative;
@@ -280,27 +324,43 @@ section #grid #four {
     margin: 0 auto;
   }
   section .block.active #item1 {
+    position: absolute;
     opacity: 1;
     min-height: 0;
-    max-height: 20vh;
+    max-height: 500px;
   }
   section .block.active #onePic {
     opacity: 1;
-    min-height: 0;
-    max-height: 100vh;
+    /*min-height:0;
+    max-height:100vh;*/
   }
   section .block.active #ecommerceContainer .job {
     min-height: 0;
     max-height: none;
   }
+  section .block.active #ecommerceContainer .ecomphotos {
+    position: relative;
+    z-index: 9999;
+    padding: 0;
+    width: 80vw;
+    height: auto;
+    /*height: 15vw;*/
+    top: 50px;
+    /*float: left;*/
+    margin: 0 auto;
+    left: 0;
+    /*max-height: 0;*/
+  }
   section .block.active #ecommerceContainer .ecomphotos img {
-    max-height: 25vh;
-    min-height: 25vh;
+    max-height: 4000px;
+    min-height: 4000px;
+    width: 100%;
   }
   section .block.active #ecommerceContainer .ecomphotos .jobAbout {
     /*max-height: 25vh;
     min-height: 25vh; */
     opacity: 1;
+    margin-left: 20px;
   }
   section .block.inactive {
     max-height: 0;
@@ -376,6 +436,8 @@ section #grid #four {
     left: 5%;
     float: left;
     margin: 0 auto;
+    webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
   }
   section .block #ecommerceContainer {
     transition: opacity 1s 2s;
@@ -444,6 +506,27 @@ section #grid #four {
     max-height: 500vh;
     position: relative;
     bottom: 0;
+  }
+  section .block.active .imageContainer .imageSwap {
+    position: relative;
+    bottom: 20%;
+    padding: 2px;
+    width: 15vw;
+    height: 15vw;
+    left: 5%;
+    float: left;
+    margin: 0 auto;
+  }
+  section .block.active .imageContainer .imageSwap .photos {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+  section .block.active .imageContainer .imageSwap .top {
+    opacity: 0;
+  }
+  section .block.active .imageContainer .imageSwap .top:hover {
+    opacity: 1;
   }
   section .block.active #ecommerceContainer {
     /*max-height: 100%;*/

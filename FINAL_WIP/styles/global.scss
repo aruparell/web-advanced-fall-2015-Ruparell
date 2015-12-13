@@ -7,7 +7,7 @@ body {
 
 header {
   position: fixed;
-  z-index: 1000;
+  z-index: 100000;
   top: 0;
   left: 0;
   background-color: #4a4a4a;
@@ -112,13 +112,18 @@ section {
       } /*end of block CSS*/
   .imageSwap {
     position: relative;
-     
-     #top:hover {
-      opacity:0;
+    .photos {
+      position: absolute;
+    }
+    .top {
+      opacity: 0;
+    }
+     .top:hover {
+      opacity:1;
      }
   }
   .imageContainer{
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     position: absolute;
     width: 100%;
     height: auto;
@@ -137,8 +142,8 @@ section {
         transition: max-height 2s;
         transition-delay: 1s;
         max-height: 0;
-        webkit-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out;
+        webkit-transition: opacity 2s ease-in-out;
+        transition: opacity 2s ease-in-out;
       
 
         }
@@ -205,6 +210,7 @@ section {
       
       .jobAbout {
         position: relative;
+        margin-left: 20px;
       
         }
 
@@ -240,7 +246,9 @@ section {
 
 
     @media all and (max-width:1199px) and (min-width: 400px) {
-
+      body {
+        overflow: hidden;
+      }
       #grid.active {
         overflow: visible;
 
@@ -250,6 +258,7 @@ section {
         height: 100vh;
         min-height: 25vh;
         max-height: 25vh;
+        overflow: hidden;
         transition: max-height 1s;
         
 
@@ -282,6 +291,7 @@ section {
               max-height:0;
               min-height:0;
 
+
             }
             .job {
               min-height:0;
@@ -295,14 +305,25 @@ section {
 */            }
           }
           #item1 {
-            opacity:0;
-            min-height:0;
+            background-color: white;
+            opacity: 0;
+            padding: 8px;
+            position: absolute;
+            bottom: 20%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 90%;
+            height: auto;
             max-height:0;
+            overflow: hidden;
+            transition: all 1s;
+           /*transition-delay: 2s;*/
           }
           #onePic {
-            opacity:0;
-            min-height:0;
-            max-height:0;
+            opacity:0.95;
+            /*min-height:0;
+            max-height:0;*/
           }
 
         &.active {
@@ -319,9 +340,30 @@ section {
               width: 50vh;
               height: 50vh;
               background-size: cover;
-
-
             }
+            .imageSwap {
+              position: relative;
+              bottom: 20%;
+              padding: 2px;
+              width: 50vw;
+              height:50vh;
+              left: 5%;
+              float: left;
+              margin: 0 auto;
+
+              .photos {
+              position: absolute;
+              top:50px;
+              left:0;
+                }
+              .top {
+              opacity: 0;
+                }
+              .top:hover {
+              opacity:1;
+                }
+              } 
+
             .MUphotos {
               max-height: 100vh;
               position: relative;
@@ -335,14 +377,15 @@ section {
             
           }
           #item1 {
+            position:absolute;
             opacity:1;
             min-height:0;
-            max-height:20vh;
+            max-height:500px;
           }
           #onePic {
             opacity:1;
-            min-height:0;
-            max-height:100vh;
+            /*min-height:0;
+            max-height:100vh;*/
           }
           
          #ecommerceContainer {
@@ -351,15 +394,29 @@ section {
                   max-height:none;
                 }
               .ecomphotos {
+                position: relative; 
+                z-index: 9999;
+                padding: 0;
+                width: 80vw;
+                height: auto;
+                /*height: 15vw;*/
+                top: 50px;
+                /*float: left;*/
+                margin: 0 auto;
+                left:0;
+                /*max-height: 0;*/
+            
                 img {
-                  max-height: 25vh;
-                  min-height: 25vh;
+                  max-height: 4000px;
+                  min-height: 4000px;
+                  width: 100%;
                 }
                 
                 .jobAbout {
                   /*max-height: 25vh;
                   min-height: 25vh; */
                   opacity: 1;
+                  margin-left: 20px;
                 }
               }
               
@@ -428,6 +485,7 @@ section {
 
         }
 
+  
         .imageContainer{
           transition: max-height 2s;
         /*  transition-delay: 2s;*/
@@ -451,6 +509,8 @@ section {
             left: 5%;
             float: left;
             margin: 0 auto;
+            webkit-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
             
           }
 
@@ -517,6 +577,7 @@ section {
             max-height: 50%;
 
           } /*end of item1*/
+           
           .imageContainer{
             /*max-height: 100%;*/
             max-height: 500vh;
@@ -531,6 +592,27 @@ section {
               bottom: 0;
               
               } /*end of photos*/
+            .imageSwap {
+            position: relative;
+            bottom: 20%;
+            padding: 2px;
+            width: 15vw;
+            height:15vw;
+            left: 5%;
+            float: left;
+            margin: 0 auto;
+            .photos {
+            position: absolute;
+            top:50px;
+            left:0;
+              }
+            .top {
+            opacity: 0;
+              }
+            .top:hover {
+            opacity:1;
+              }
+            }   
 
            } /*end of imageContainer*/
            #ecommerceContainer{
