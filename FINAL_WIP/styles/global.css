@@ -353,7 +353,7 @@ section #grid #four {
   }
   section .block.active #ecommerceContainer .ecomphotos img {
     max-height: 4000px;
-    min-height: 4000px;
+    min-height: 0;
     width: 100%;
   }
   section .block.active #ecommerceContainer .ecomphotos .jobAbout {
