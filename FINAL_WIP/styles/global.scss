@@ -52,6 +52,7 @@ section {
       
       background-color: white;
       opacity: 0.95;
+      overflow: hidden;
 
       /*background-image: url(images/grid_one_bgimage.jpg);
       background-repeat: no-repeat;*/
@@ -62,26 +63,41 @@ section {
           visibility: hidden;
           }*/
           &.active {
+            overflow: visible;
           }
       
       #onePic {
         z-index: -100;
         position: relative;
         opacity: 0.5;
+
         }
 
         }
 
 
         #two{
-          background-color: blue;
+          background-color: #005dc5;
+          /*content: url(../images/fearnot.jpg);*/
           position: relative;
-
+          opacity:0.9;
+          overflow: hidden;
+          /*z-index:10;*/
+          
+          #twoPic {
+            position: relative;
+            opacity: 0.5;
+            z-index: -1000;
+            overflow: hidden;
+            top:-1000px;
+            /*z-index: 10;*/
+          }
 
         }
         #three {
           background-color:green; 
           position: relative;
+          top:50px;
 
 
         }
@@ -127,7 +143,7 @@ section {
     position: absolute;
     width: 100%;
     height: auto;
-    max-height: 0;
+    max-height: 0; 
 
 
       .photos {
@@ -494,6 +510,7 @@ section {
           /*top: 20%;*/
           width: 100%;
           height: 100%;
+          z-index: 12;
           overflow: hidden;
 
 
@@ -601,6 +618,7 @@ section {
             left: 5%;
             float: left;
             margin: 0 auto;
+            
             .photos {
             position: absolute;
             top:50px;
