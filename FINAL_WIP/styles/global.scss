@@ -97,7 +97,7 @@ section {
         #three {
           background-color:green; 
           position: relative;
-          top:50px;
+          /*top:50px;*/
 
 
         }
@@ -350,6 +350,7 @@ section {
 
           .imageContainer{
             max-height: 100vh;
+            overflow: auto;
 
             .photos {
               max-height: 100vh;

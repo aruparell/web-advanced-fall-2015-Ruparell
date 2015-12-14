@@ -86,7 +86,7 @@ section #grid #two #twoPic {
 section #grid #three {
   background-color: green;
   position: relative;
-  top: 50px;
+  /*top:50px;*/
 }
 section #grid #four {
   background-color: purple;
@@ -302,6 +302,7 @@ section #grid #four {
   }
   section .block.active .imageContainer {
     max-height: 100vh;
+    overflow: auto;
   }
   section .block.active .imageContainer .photos {
     max-height: 100vh;
