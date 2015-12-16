@@ -78,8 +78,13 @@ section {
       #onePic {
         z-index: -1000;
         position: relative;
-        opacity: 1;
-        
+        opacity: 0;
+        webkit-transition: opacity 2s ease-in-out;
+        transition: opacity 2s ease-in-out;
+
+          &.active{
+            opacity:0.5;
+          }
 
         }
 
@@ -87,25 +92,28 @@ section {
 
 
         #two{
-          background-color: #005dc5;
-          /*content: url(../images/fearnot.jpg);*/
+          background-color: #881fbf;
           position: relative;
           opacity:0.9;
           overflow: hidden;
-          /*z-index:10;*/
           
           #twoPic {
             position: relative;
-            opacity: 0.5;
+            opacity: 0;
             z-index: -1000;
             overflow: hidden;
             top:-1000px;
-            /*z-index: 10;*/
+            webkit-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+
+              &.active {
+                opacity:0.5;
+              }
           }
 
         }
         #three {
-          background-color:green; 
+          background-color:#7e26a3; 
           position: relative;
           /*top:50px;*/
 
@@ -310,7 +318,7 @@ section {
            /*transition-delay: 2s;*/
           }
           #onePic {
-            opacity:0.95;
+            opacity:0.5;
             /*min-height:0;
             max-height:0;*/
           }
@@ -366,6 +374,9 @@ section {
             }
             
           }
+          #one {
+            opacity:0;
+          }
           #item1 {
             position:absolute;
             opacity:1;
@@ -373,7 +384,7 @@ section {
             max-height:500px;
           }
           #onePic {
-            /*opacity:1;*/
+            opacity:0.5;
             /*min-height:0;
             max-height:100vh;*/
           }
@@ -453,7 +464,6 @@ section {
           position: absolute;
           right:0;
         }
-
 
         #item1{
          
@@ -563,6 +573,10 @@ section {
         &.active {
           max-width: 100%;
           max-height: 1200vh;
+
+          #onePic{
+            opacity:0.5;
+          }
 
           #item1{
             max-height: 50%;

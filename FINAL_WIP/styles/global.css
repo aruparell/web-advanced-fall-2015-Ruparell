@@ -69,26 +69,33 @@ section #grid #one.active {
 section #grid #one #onePic {
   z-index: -1000;
   position: relative;
-  opacity: 1;
+  opacity: 0;
+  webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+section #grid #one #onePic.active {
+  opacity: 0.5;
 }
 section #grid #two {
-  background-color: #005dc5;
-  /*content: url(../images/fearnot.jpg);*/
+  background-color: #881fbf;
   position: relative;
   opacity: 0.9;
   overflow: hidden;
-  /*z-index:10;*/
 }
 section #grid #two #twoPic {
   position: relative;
-  opacity: 0.5;
+  opacity: 0;
   z-index: -1000;
   overflow: hidden;
   top: -1000px;
-  /*z-index: 10;*/
+  webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+section #grid #two #twoPic.active {
+  opacity: 0.5;
 }
 section #grid #three {
-  background-color: green;
+  background-color: #7e26a3;
   position: relative;
   /*top:50px;*/
 }
@@ -258,7 +265,7 @@ section #grid #four {
     /*transition-delay: 2s;*/
   }
   section .block #onePic {
-    opacity: 0.95;
+    opacity: 0.5;
     /*min-height:0;
     max-height:0;*/
   }
@@ -308,6 +315,9 @@ section #grid #four {
     float: none;
     margin: 0 auto;
   }
+  section .block.active #one {
+    opacity: 0;
+  }
   section .block.active #item1 {
     position: absolute;
     opacity: 1;
@@ -315,7 +325,7 @@ section #grid #four {
     max-height: 500px;
   }
   section .block.active #onePic {
-    /*opacity:1;*/
+    opacity: 0.5;
     /*min-height:0;
     max-height:100vh;*/
   }
@@ -475,6 +485,9 @@ section #grid #four {
     /*end of item1*/
     /*end of imageContainer*/
     /*end of imageContainer*/
+  }
+  section .block.active #onePic {
+    opacity: 0.5;
   }
   section .block.active #item1 {
     max-height: 50%;

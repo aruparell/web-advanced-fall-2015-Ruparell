@@ -13,6 +13,7 @@ $(document).ready(function(){
 		// console.log (e);
 		console.log("clicked");
 		$(this).toggleClass("active");
+		$('#onePic').toggleClass("active");
 		$('#grid').toggleClass("active");
 		$('.block#two').toggleClass("inactive");
 		$('.block#three').toggleClass("inactive");
@@ -21,6 +22,7 @@ $(document).ready(function(){
 	$('.block#two').click(function(){
 		console.log("clicked");
 		$(this).toggleClass("active");
+		$('#twoPic').toggleClass("active");
 		$('#grid').toggleClass("active");
 		$('.block#one').toggleClass("inactive");
 		$('.block#three').toggleClass("inactive");
