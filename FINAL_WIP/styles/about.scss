@@ -10,7 +10,7 @@ body {
       font-size: 40px;
       color: grey;
       top: 150px;
-      left: 210px;
+      left: 17vw;
       /*right: 50px;*/
       width: 300px;
       /*border: 1px solid black;*/
@@ -34,7 +34,7 @@ body {
       width: calc((100vw/3)*1.7);
       height: 350px;
       position: relative;
-      left: 460px;
+      left: 35vw;
     /*  top: 10px;*/
       /*left: 500px;*/
       bottom: 450px;
@@ -74,11 +74,15 @@ a {
 
 }
 
- @media only screen and (max-width: 700px) {
+ @media all and (max-width:1199px) and (min-width: 400px) {
  
 body {
 
-  
+  p {
+    padding: 0;
+    margin: 0 auto;
+
+  }
 
     #profilePicture {
       width: 100vw;
@@ -87,6 +91,7 @@ body {
     h2 {
     position: relative;
     font-size: 30px;
+    left:35vw;
     color: purple;
     width: 100vw;
     top: 65px;
@@ -95,21 +100,17 @@ body {
     z-index:9999;
     }
   #text{
-    width: 100vw;
+    width: 90vw;
     padding: 2px;
-    border: 1px solid black;
     display: block;
     position: relative;
-    margin: 0 auto;
+    margin: 10px;
     left: 0;
-    p {
       
-      width: 100vw;
+      p {
+      width: 90vw;
       left: 0;
-      width: 100vw;
       top: 10px;
-      
-      position: relative;
       /*left: 500px;*/
       /*bottom: 400px;*/
       /*padding: 2px;*/

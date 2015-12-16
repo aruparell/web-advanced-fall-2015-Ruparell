@@ -1,7 +1,11 @@
+@import "http://fonts.googleapis.com/css?family=Droid+Sans";
+@import "http://fonts.googleapis.com/css?family=Roboto+Slab";
+
 body {
   background-color: #eee;
   margin: 0;
   padding: 0;
+  font-family:'Droid Sans',sans-serif;
   /*overflow:hidden;*/
 }
 
@@ -15,6 +19,7 @@ header {
   width: 100vw;
   text-align: center;
   display: inline-block;
+
 }
 header #logo {
   height: 40px;
@@ -29,6 +34,7 @@ a {
   text-decoration: none;
   line-height: 7.5vh;
   padding: 0 2vh;
+  font-family:'Droid Sans',sans-serif;
 }
 
 section {
