@@ -53,7 +53,7 @@ section #grid {
 }
 section #grid #one {
   background-color: #9568d8;
-  opacity: 1;
+  opacity: 0.9;
   overflow: hidden;
   /*background-image: url(images/grid_one_bgimage.jpg);
   background-repeat: no-repeat;*/
@@ -67,7 +67,7 @@ section #grid #one.active {
   overflow: visible;
 }
 section #grid #one #onePic {
-  z-index: -1;
+  z-index: -1000;
   position: relative;
   opacity: 1;
 }

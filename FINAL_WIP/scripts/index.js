@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-	// $('.block#one').click(function(e){
-	// 	console.log (e);	
-	// 	if (e.currentTarget.classList.contains ('active')) {
-	// 		if ('object with x class') {
+	$('.block#one').click(function(e){
+		console.log (e);	
+		if (e.currentTarget.classList.contains ('active')) {
+			if ('object with x class') {
 
-	// 		} else {
-	// 			return;
-	// 		}
+			} else {
+				return;
+			}
 			
-	// 	}
+		}
 		// console.log (e);
 		console.log("clicked");
 		$(this).toggleClass("active");
