@@ -1,33 +1,15 @@
 $(document).ready(function(){
 
+	// $('.block#one').click(function(e){
+	// 	console.log (e);	
+	// 	if (e.currentTarget.classList.contains ('active')) {
+	// 		if ('object with x class') {
 
-// if ($(window).width() > 1200){
-
-// 	$('.block').mouseover(function(){
-// 			$(this).fadeTo("fast", 0.50);
-// 			// $(this).addClass('.do-spin');
-// 			$(this).removeClass("block");
-// 			$(this).addClass("grow");
-// 			// $(this).css("z-index","9999");
-// 			}).mouseleave(function(){
-// 			$(this).fadeTo("fast", 0.85);
-// 			$(this).removeClass("grow");
-// 			$(this).addClass("block");
-
-// 			});
-// 	};
-
-
-	$('.block#one').click(function(e){
-		console.log (e);	
-		if (e.currentTarget.classList.contains ('active')) {
-			if ('object with x class') {
-
-			} else {
-				return;
-			}
+	// 		} else {
+	// 			return;
+	// 		}
 			
-		}
+	// 	}
 		// console.log (e);
 		console.log("clicked");
 		$(this).toggleClass("active");

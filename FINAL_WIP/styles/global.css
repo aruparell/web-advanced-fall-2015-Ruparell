@@ -52,8 +52,8 @@ section #grid {
   visibility: visible;
 }
 section #grid #one {
-  background-color: white;
-  opacity: 0.95;
+  background-color: #9568d8;
+  opacity: 1;
   overflow: hidden;
   /*background-image: url(images/grid_one_bgimage.jpg);
   background-repeat: no-repeat;*/
@@ -67,9 +67,9 @@ section #grid #one.active {
   overflow: visible;
 }
 section #grid #one #onePic {
-  z-index: -100;
+  z-index: -1;
   position: relative;
-  opacity: 0.5;
+  opacity: 1;
 }
 section #grid #two {
   background-color: #005dc5;
@@ -131,36 +131,6 @@ section #grid #four {
   width: 100%;
   height: auto;
   max-height: 0;
-  /*#MU1 {
-        &:hover {
-           opacity: 0.5;
-          }
-        }
-  #MU2 {content: url(../images/sandheart.jpg)}
-  #MU3 {content: url(../images/plane.jpg)}
-  #MU4 {content: url(../images/NYC.jpg)}
-  #MU5 {content: url(../images/fountain.jpg)}
-  #MU6 {content: url(../images/Paris.jpg)}
-  #MU7 {content: url(../images/aus1.jpg)}
-  #MU8 {content: url(../images/aus2.jpg)}
-  #MU9 {content: url(../images/africa.jpg)}
-  #MU10 {content: url(../images/silhouette.jpg)}
-  #MU11 {content: url(../images/sangria.jpg)}
-  #MU12 {content: url(../images/bike.jpg)}
-  #MU13 {content: url(../images/nyc2.jpg)}
-  #MU14 {content: url(../images/paris2.jpg)}
-  #MU15 {content: url(../images/rome.jpg)}
-  #MU16 {content: url(../images/nyc3.jpg)}
-  #MU17 {content: url(../images/FearNot.jpg)}
-  #MU18 {content: url(../images/FearNot.jpg)}*/
-  /*#makeUp1{content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
-  #makeUp2{content: url(../images/MUA_SnehaBridal_comp.jpg)}
-  #makeUp3{content: url(../images/MUA_Fashion_Veronica.jpg)}
-  #makeUp4{content: url(../images/MUA_JoBridal_comp.jpg)}
-  #makeUp5{content: url(../images/MUA_Fashion_SamanthaGold_comp.jpg)}
-  #makeUp6{content: url(../images/NYC.jpg)}
-  #makeUp7{content: url(../images/NYC.jpg)}
-  #makeUp8{content: url(../images/NYC.jpg)}*/
 }
 .imageContainer .photos {
   position: relative;
@@ -198,13 +168,6 @@ section #grid #four {
   height: auto;
   max-height: 0;
   display: block;
-  /*#ecom1 {content: url(../images/Loreal_Kerastase_CaseStudy.jpg)}
-  #ecom2 {content: url(../images/Loreal_Shu_Responsive_Design.jpg)}
-  #ecom3 {content: url(../images/MUA_Fashion_Amy_transformation.jpg)}
-  #ecom4 {content: url(../images/FearNot.jpg)}
-  #ecom5 {content: url(../images/FearNot.jpg)}
-  #ecom6 {content: url(../images/FearNot.jpg)}
-*/
 }
 #ecommerceContainer .jobImage {
   position: relative;
@@ -352,7 +315,7 @@ section #grid #four {
     max-height: 500px;
   }
   section .block.active #onePic {
-    opacity: 1;
+    /*opacity:1;*/
     /*min-height:0;
     max-height:100vh;*/
   }

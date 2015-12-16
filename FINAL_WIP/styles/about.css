@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   position: absolute;
+  font-family: 'Droid Sans',sans-serif;
   /*overflow:hidden;*/
 }
 body h2 {
