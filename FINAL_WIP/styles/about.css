@@ -9,12 +9,10 @@ body {
 body h2 {
   position: relative;
   font-size: 40px;
-  color: grey;
+  color: #a684e4;
   top: 150px;
   left: 17vw;
-  /*right: 50px;*/
   width: 300px;
-  /*border: 1px solid black;*/
   padding: 10px;
   margin: 0 auto;
 }
@@ -82,11 +80,10 @@ a {
     position: relative;
     font-size: 30px;
     left: 35vw;
-    color: purple;
+    color: #a684e4;
     width: 100vw;
     top: 65px;
     margin: 0 auto;
-    /*border: 1px solid black;*/
     z-index: 9999;
   }
   body #text {
