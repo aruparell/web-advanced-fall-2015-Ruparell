@@ -31,6 +31,7 @@ $(document).ready(function(){
 	$('.block#three').click(function(){
 		console.log("clicked");
 		$(this).toggleClass("active");
+		$('#threePic').toggleClass("active");
 		$('#grid').toggleClass("active");
 		$('.block#two').toggleClass("inactive");
 		$('.block#one').toggleClass("inactive");

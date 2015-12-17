@@ -1,0 +1,616 @@
+@import "http://fonts.googleapis.com/css?family=Droid+Sans";
+@import "http://fonts.googleapis.com/css?family=Roboto+Slab";
+
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  font-family:'Droid Sans',sans-serif;
+  /*overflow:hidden;*/
+}
+
+header {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  background-color: #4a4a4a;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+
+}
+header #logo {
+  height: 40px;
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  top: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  line-height: 7.5vh;
+  padding: 0 2vh;
+  font-family:'Droid Sans',sans-serif;
+}
+
+section {
+  position: relative;
+  /*  top: 15vh;*/
+  left: 0;
+
+
+
+  #grid {
+
+    width: 100vw;
+    margin-top: 50px;
+    height: 100vh;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    visibility: visible;
+
+    #one{
+      
+      background-color: #b44ce4;
+      opacity: 0.9;
+      overflow: hidden;
+
+          &.active {
+            overflow: visible;
+
+
+          }
+      
+      #onePic {
+        z-index: -1000;
+        position: relative;
+        opacity: 0;
+        webkit-transition: opacity 2s ease-in-out;
+        transition: opacity 2s ease-in-out;
+
+          &.active{
+            opacity:0.5;
+          }
+
+        }
+
+        }
+
+
+        #two{
+          background-color: #881fbf;
+          position: relative;
+          opacity:0.9;
+          overflow: hidden;
+
+          
+          #twoPic {
+            position: relative;
+            opacity: 0;
+            z-index: -1000;
+            overflow: hidden;
+            top:-1000px;
+            webkit-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+
+              &.active {
+                opacity:0.5;
+              }
+          }
+
+        }
+        #three {
+          background-color:#6d049e; 
+          position: relative;
+          opacity:0.9;
+          overflow:auto;
+
+          #threePic {
+            position: relative;
+            opacity: 0;
+            z-index: -1000;
+            overflow: hidden;
+            top:-2000px;
+            webkit-transition: opacity 2s ease-in-out;
+            transition: opacity 2s ease-in-out;
+
+              &.active {
+                opacity:0.2;
+              }
+          }
+
+
+        }
+        #four {
+          background-color:#5b1480; 
+      
+          &.active{overflow: auto;}
+
+
+        }
+        } /*end of grid*/
+        } /*end of section*/
+
+        .block {
+         float: left;
+         visibility: visible;
+         /*outline: 1px black solid;*/
+         height: 100vh;
+         width: calc(100vw/4);
+
+         
+
+
+
+      } /*end of block CSS*/
+  .imageSwap {
+    position: relative;
+    .photos {
+      position: absolute;
+    }
+    .top {
+      opacity: 0;
+    }
+     .top:hover {
+      opacity:1;
+     }
+  }
+  .imageContainer{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 0; 
+
+
+      .photos {
+        position: relative;
+        padding: 2px;
+        width: 15vw;
+        height:15vw;
+        left: 5%;
+        top: 50px;
+        float: left;
+        margin: 0 auto;
+        transition: max-height 2s;
+        transition-delay: 1s;
+        max-height: 0;
+        webkit-transition: opacity 2s ease-in-out;
+        transition: opacity 2s ease-in-out;
+      
+
+        }
+
+        .MUphotos {
+          position: relative;
+          padding: 4px;
+          width: 30vw;
+          height: 626px;
+          left: 5%;
+          top:50px;
+          float: left;
+          margin: 0 auto;
+        
+        }
+
+      
+  } /*end of image container*/
+  
+  #ecommerceContainer{
+    transition: max-height 2s;
+    z-index: 9999;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    display:block;
+  
+
+      .jobImage {
+        position: relative;
+        float: left;
+        }
+      
+      .jobAbout {
+        position: relative;
+        margin-left: 20px;
+      
+        }
+
+
+
+      .ecomphotos {
+        position: relative; 
+        z-index: 9999;
+        padding: 10px;
+        width: 35vw;
+        left: 5%;
+        top: 50px;
+        margin: 0 auto;
+      
+
+      }
+
+
+  } /*end of ecommerceContainer*/
+  
+
+
+
+
+    @media all and (max-width:1199px) and (min-width: 400px) {
+      body {
+        overflow: hidden;
+      }
+      #grid.active {
+        overflow: visible;
+
+      }
+      section .block {
+        width: 100vw;
+        height: 100vh;
+        min-height: 25vh;
+        max-height: 25vh;
+        overflow: hidden;
+        transition: max-height 1s;
+        
+
+        .imageContainer{
+
+            .photos {
+              max-height: 0vh;
+              width: 50vh;
+              height: 50vh;
+              background-size: cover;
+              transition-delay: 0s;
+              float: none;
+              
+            }
+            .MUphotos {
+              max-height:0;
+              left:0;
+              right:0;
+              width:100vw;
+              
+            }
+          
+          }
+          #ecommerceContainer {
+            .ecomphotos img {
+              max-height:0;
+              min-height:0;
+
+
+            }
+            .job {
+              min-height:0;
+              max-height:0;
+            }
+
+            .jobAbout {
+              opacity: 0;
+/*            
+*/            }
+          }
+          #item1 {
+            background-color: white;
+            opacity: 0;
+            padding: 8px;
+            position: absolute;
+            bottom: 20%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 90%;
+            height: auto;
+            max-height:0;
+            overflow: hidden;
+            transition: all 1s;
+           
+          }
+          #onePic {
+            opacity:0.5;
+            
+          }
+
+        &.active {
+          max-height: 10000vh;
+          overflow: auto;
+
+
+          .imageContainer{
+            max-height: 100vh;
+            overflow: auto;
+
+            .photos {
+              max-height: 100vh;
+              width: 50vh;
+              height: 50vh;
+              background-size: cover;
+            }
+            .imageSwap {
+              position: relative;
+              bottom: 20%;
+              padding: 2px;
+              width: 50vw;
+              height:50vh;
+              left: 5%;
+              float: left;
+              margin: 0 auto;
+
+              .photos {
+              position: absolute;
+              top:50px;
+              left:0;
+                }
+              .top {
+              opacity: 0;
+                }
+              .top:hover {
+              opacity:1;
+                }
+              } 
+
+            .MUphotos {
+              max-height: 100vh;
+              position: relative;
+              padding: 4px;
+              width: 100vw;
+              height: auto;
+              top:50px;
+              float: none;
+              margin: 0 auto;
+            }
+            
+          }
+          #one {
+            opacity:0;
+          }
+          #item1 {
+            position:absolute;
+            opacity:1;
+            min-height:0;
+            max-height:500px;
+          }
+          #onePic {
+            opacity:0.5;
+           
+          }
+          
+         #ecommerceContainer {
+            .job {
+                  min-height:0;
+                  max-height:none;
+                }
+              .ecomphotos {
+                position: relative; 
+                z-index: 9999;
+                padding: 0;
+                width: 80vw;
+                height: auto;
+                top: 50px;
+                margin: 0 auto;
+                left:0;
+            
+                img {
+                  max-height: 4000px;
+                  min-height: 0;
+                  width: 100%;
+                }
+                
+                .jobAbout {
+                  opacity: 1;
+                  margin-left: 20px;
+                }
+              }
+              
+            }
+        }
+        &.inactive {
+          max-height: 0;
+          min-height:0;
+
+         
+
+        }
+      }
+
+    }
+
+    @media all and (min-width: 1200px) {
+
+       #grid.active {
+        overflow: visible;
+
+      }
+
+      section .block {
+        width: 100vw;
+        height: auto;
+        min-height: 100%;
+        max-width: calc(100vw/4);
+        max-height: calc(100vh-50px);
+        transition: max-width 1s;
+        
+          &#four {
+          background-color: purple;
+          float: right;
+          position: absolute;
+          right:0;
+          }
+
+        #item1{
+         
+          transition: max-height 1s;
+          transition-delay: 2s;
+          background-color: white;
+          opacity: 0.9;
+          padding: 8px;
+          position: absolute;
+          bottom: 20%;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          width: 30%;
+          height: 50%;
+          max-height:0;
+          overflow: hidden;
+
+        }
+
+  
+        .imageContainer{
+          transition: max-height 2s;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 12;
+          overflow: hidden;
+
+
+          .photos {
+            transition: max-height 3s;
+            transition-delay: 2s;
+            position: relative;
+            bottom: 20%;
+            padding: 2px;
+            width: 15vw;
+            height:15vw;
+            left: 5%;
+            float: left;
+            margin: 0 auto;
+            webkit-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            
+          }
+
+        }
+
+         #ecommerceContainer{
+          transition: opacity 1s 2s;
+          position: absolute;
+          /*top: 20%;*/
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          opacity: 0;
+
+          .ecomphotos {
+            transition: max-height 3s;
+            transition-delay: 2s;
+            bottom: 20%;
+            padding: 8px;
+            width: 90vw;
+            left: 5%;
+            float: left;
+            margin: 0 auto;
+            display: block;
+            clear: both;
+            border: 2px dashed #eee;
+            margin:2px;
+              &active{overflow:hidden;}
+
+            img {
+              position: relative;
+              display: inline-block;
+              float: left;
+              width: 35vw;
+            
+            }
+            
+          }
+           .jobAbout {position: relative;
+              display:inline-block;
+              
+              }
+          
+        }
+        
+
+        &:hover {
+
+          max-width: calc(100vw/3.5);
+          z-index: 100;
+        }
+        &.inactive {
+          max-width: 0%;
+          max-height: 100vh;
+        }
+        &.active {
+          max-width: 100%;
+          max-height: 1200vh;
+
+          #onePic{
+            opacity:0.5;
+          }
+
+          #item1{
+            max-height: 50%;
+
+          } /*end of item1*/
+
+          .imageContainer{
+            max-height: 500vh;
+            position: relative;
+            bottom: 0;
+            top:50px;
+            overflow: visible;
+
+            .photos{
+              max-height: 500vh;
+              position: relative;
+              bottom: 0;
+              
+              } /*end of photos*/
+            .imageSwap {
+            position: relative;
+            bottom: 20%;
+            padding: 2px;
+            width: 15vw;
+            height:15vw;
+            left: 5%;
+            float: left;
+            margin: 0 auto;
+            
+            .photos {
+            position: absolute;
+            top:50px;
+            left:0;
+              }
+            .top {
+            opacity: 0;
+              }
+            .top:hover {
+            opacity:1;
+              }
+            }   
+
+           } /*end of imageContainer*/
+           #ecommerceContainer{
+            max-height: 500vh;
+            position: relative;
+            bottom: 0;
+            overflow: visible;
+            opacity: 1;
+
+            .ecomphotos{
+              position: relative;
+              bottom: 0;
+              clear: both;
+              
+              } /*end of photos*/
+
+           } /*end of imageContainer*/
+
+        } /*end of active*/
+
+        } /*end of inactive*/
+
+      
+
+    } 
+  

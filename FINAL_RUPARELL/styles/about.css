@@ -1,0 +1,109 @@
+@import "http://fonts.googleapis.com/css?family=Droid+Sans";
+@import "http://fonts.googleapis.com/css?family=Roboto+Slab";
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-family: 'Roboto Slab',sans-serif;
+  /*overflow:hidden;*/
+}
+body h2 {
+  position: relative;
+  font-size: 40px;
+  color: #a684e4;
+  top: 150px;
+  left: 17vw;
+  width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+}
+body #profilePicture {
+  /*border: 1px black solid;*/
+  /*height: 500px;*/
+  width: calc(100vw/3);
+  position: relative;
+  /*top: 65px;*/
+  /* padding: 10px;*/
+  display: inline-block;
+}
+body p {
+  display: inline-block;
+  width: calc((100vw/3)*1.7);
+  height: 350px;
+  position: relative;
+  left: 35vw;
+  /*  top: 10px;*/
+  /*left: 500px;*/
+  bottom: 450px;
+  padding: 10px;
+  margin: 10px;
+  /*  border: 1px solid black;*/
+}
+
+/*end of body*/
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #4a4a4a;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+}
+
+header #logo {
+  height: 35px;
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  top: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  line-height: 7.5vh;
+  padding: 0 2vh;
+}
+
+@media all and (max-width: 1199px) and (min-width: 400px) {
+  body p {
+    padding: 0;
+    margin: 0 auto;
+  }
+  body #profilePicture {
+    width: 100vw;
+    /*position: relative;*/
+  }
+  body h2 {
+    position: relative;
+    font-size: 30px;
+    left: 35vw;
+    color: #a684e4;
+    width: 100vw;
+    top: 65px;
+    margin: 0 auto;
+    z-index: 9999;
+  }
+  body #text {
+    width: 90vw;
+    padding: 2px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    left: 0;
+  }
+  body #text p {
+    width: 90vw;
+    left: 0;
+    top: 10px;
+    /*left: 500px;*/
+    /*bottom: 400px;*/
+    /*padding: 2px;*/
+    /*margin: 10px;*/
+    /*border: 1px solid black;*/
+  }
+}

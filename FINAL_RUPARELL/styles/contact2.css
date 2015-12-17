@@ -1,0 +1,152 @@
+@import "http://fonts.googleapis.com/css?family=Droid+Sans";
+@import "http://fonts.googleapis.com/css?family=Roboto+Slab";
+
+body{
+  background-color: #eee;
+  margin: 0 auto;
+  padding:0;
+  font-family:'Droid Sans',sans-serif;
+
+  
+}
+
+/*body #container {
+  margin-top: 50px;
+  position: absolute;
+}*/
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: #4a4a4a;
+  height: 50px;
+  width: 100vw;
+  text-align: center;
+  display: inline-block;
+}
+header #logo {
+  height: 40px;
+  position: absolute;
+  display: inline-block;
+  left: 20px;
+  top: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  line-height: 1.5vh;
+  padding: 0 2vh;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#col1, #col2, #col3 {
+  float: left;
+  width: 31%;
+  margin: 1%;
+  padding: 1%;
+}
+
+#col1{
+  background-color: #eee;
+  height: 500px;
+}
+
+.orange{
+  background-color: orange;
+  height: 400px;
+}
+
+.green{
+  background-color: green;
+}
+
+#col3{
+  background-color: #a684e4;
+  height: 300px;
+}
+
+/* Form specific styles!!! */
+
+* {
+/* With these codes padding and border does not increase it's width. Gives intuitive style. */
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+/*div#envelope{
+  width:50%;
+  margin:10px 30% 10px 25%;
+  background-color:#5c21c7;
+  padding:10px 0;
+  border:1px solid gray;
+  border-radius:10px;
+}*/
+
+form{
+  width:70%;
+  margin:0 15%;
+}
+
+form header{
+  text-align:center;
+  font-family:'Roboto Slab',serif;
+}
+/* Makes responsive fields. Sets size and field alignment. */
+input[type=text]{
+  margin-bottom:20px;
+  margin-top:10px;
+  width:100%;
+  padding:15px;
+  border-radius:5px;
+  border:1px solid #a684e4;
+}
+
+input[type=submit]{
+  margin-bottom:20px;
+  width:100%;
+  padding:15px;
+  border-radius:5px;
+  border:1px solid #a684e4;
+  background-color:#a684e4;
+}
+
+textarea{
+  width:100%;
+  padding:15px;
+  margin-top:10px;
+  border:1px solid #a684e4;
+  border-radius:5px;
+  margin-bottom:20px;
+  resize:none;
+}
+
+input[type=text]:focus,textarea:focus{border-color:#a684e4;}
+
+/* By using @ media form can have different layout for screen, mobile phone, tablet. */
+/* Sets the form layout for mobile phone, tablet. */
+
+@media only screen and (max-width : 767px) and (orientation: portrait) {
+ /* nav a {
+    display: block;
+    margin: 1% 0;
+  }*/
+
+  form > div > label,
+  legend {
+    text-align: right;
+  }
+
+  #col1, #col2, #col3 {
+    width: 100%;
+  }
+
+}
